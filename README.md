@@ -1,3 +1,5 @@
+<img src = "html-logo.png">
+
 # <🌐> Hypertext Markup Language <🌐>
 
 ## 📚 Topics Covered:
