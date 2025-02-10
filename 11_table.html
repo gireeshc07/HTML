@@ -1,0 +1,52 @@
+<!--                                                                                                                    HTML Table                                                                                                                          -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Table</title>
+        <style>
+            table{border-collapse:collapse;
+                width:100%;background-color:black;}
+
+            th{border:8px dashed rgb(219, 208, 213);
+                padding:20px;
+                font-family:verdana;
+                font-size:200%;
+                color:white;}
+
+            td{border:8px dashed yellow;
+                padding:20px;
+                font-family:verdana;
+                font-size:160%;
+                color:white;}
+            
+            caption{border:10px solid #800040;
+                padding:20px;
+                font-family:courier;
+                font-size:300%;
+                color:black;
+                background-color:rgb(238, 238, 27)}
+            </style>
+    </head>
+    <body bgcolor=" #ffb3d1">
+        <table height="500" border="10" bordercolor="#0052cc">
+            <caption>HTML Table</caption>
+            <tr valign="middle" align="center">
+                <th colspan="2" style="background-color: tomato;">COLUMN 1</th>
+                <th colspan="2" style="background-color: #66ff33;">COLUMN 2</th>
+            </tr>
+            <tr valign="middle" align="center">
+                <td rowspan="2">ROW 1</td><td>ROW 1A</td><td rowspan="2">ROW 1</td><td>ROW 1A</td>
+            </tr>
+            <tr valign="middle" align="center">
+               <td>ROW 1B</td><td>ROW 1B</td>
+            </tr>
+            <tr valign="middle" align="center">
+                <td rowspan="2">ROW 2</td><td>ROW 2A</td><td rowspan="2">ROW 2</td><td>ROW 2A</td>
+            </tr>
+            <tr>
+                <td valign="middle" align="center">ROW 2B</td><td valign="middle" align="center">ROW 2B</td>
+            </tr>
+        </table>
+    </body>
+</html>

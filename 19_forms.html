@@ -1,0 +1,240 @@
+<!--                                                                    <🌐> HTML Forms <🌐>                                                                                 -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Form</title>
+    </head>
+    <body style="background-color:bisque">
+        <form>
+            
+            <h1>Input Type Text</h1>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="First Name" 
+            placeholder="First Name" size="25" maxsize="40"><br><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" size="25" placeholder="Last Name"><br><br>
+            <label for="phone number">Phone Number:</label><br>
+            <input type="text" name="country code" placeholder="+91" size="3">
+            <input type="text" name="phone number" placeholder="Phone Number" size="11"><br><br>
+            <input type="submit" value="Submit">
+                     
+            <h1>Input Type Password</h1>
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" placeholder="UserID"><br>
+            <label for="pwd">Password:</label><br>
+            <input type="password" id="pwd" name="pwd" placeholder="Password"><br><br>
+            <input type="submit" value="Submit"><br><br>
+
+            <h1>Buttons</h1>
+            <h3>Input Type Submit</h3>
+            <input type="submit" name="submit" value="Submit">
+            <h3>Input Type Button</h3>
+            <input type="button" name="button" value="Button">
+            <input type="button" onclick="alert('Hello World!')" value="Click Me!">
+            <h3>Input Type Reset</h3>
+            <input type="reset" name="reset" value="Reset">
+            <h3>Input Type Image</h3>
+            <input type="image" name="imgbutton" src="space_animie.gif" alt="Submit" 
+            width="48" height="48">
+
+
+            <h1>Input Type Radio</h1>
+            <h3>Front End</h3>
+            <input type="radio" id="html" name="fav_language" value="HTML" checked>
+            <label for="html">HTML</label><br>
+
+            <input type="radio" id="css" name="fav_language" value="CSS" checked="checked">
+            <label for="css">CSS</label><br>
+
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label><br><br>
+            
+            <h3>Gender</h3>
+            <input type="radio" id="Male" name="male" >
+            <label for="Male">Male</label><br>
+            
+            <input type="radio" id="Female" name="female">
+            <label for="Female">Female</label><br>
+
+            <input type="radio" name="other">Other<br><br>
+            
+            <h1>Input Type Checkbox</h1>
+            <h3>Which one do you have?</h3>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" checked>
+            <label for="vehicle1"> I have a bike</label><br>
+
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> I have a car</label><br>
+
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> I have a boat</label><br><br>
+
+            <input type="submit" value="Submit">
+
+            <h1>Input Type Email</h1>
+            <label for="email">Enter your Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            <input type="submit" value="Submit">
+            
+            <h1>Input Type File</h1>
+
+            <h3>File Upload</h3>
+            <label for="myfile">Select a file:</label>
+            <input type="file" id="myfile" name="myfile" accept="text"><br><br>
+            <input type="submit" value="Submit">
+
+            <h1>Date & Time</h1>
+            <label for="birthday">Birthday:</label><br><br>
+            <input type="date" id="birthday" name="birthday"><br><br>
+            <input type="submit" value="Submit"><br><br>
+            
+            <label for="datemin">Enter a date after 2000-01-01:</label><br><br>
+            <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+          
+            <label for="datemax">Enter a date before 1980-01-01:</label><br><br>
+            <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+            <input type="submit" value="Submit"><br><br>
+
+            <label for="birthdaytime">Birthday (date and time):</label><br><br>
+            <input type="datetime-local" id="birthdaytime" name="birthdaytime"><br><br>
+            <input type="submit" value="Submit"><br><br>
+          
+            <h1>Input Type Color</h1>
+            <label for="favcolor">Select your favorite color:</label>
+            <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+            <input type="submit" value="Submit">
+            
+            <h1>Input Type Hidden</h1>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <input type="hidden" id="custId" name="custId" value="3487">
+            <input type="submit" value="Submit">
+
+            <h1>Input Type Month</h1>
+            <label for="bdaymonth">Birthday (month and year):</label>
+            <input type="month" id="bdaymonth" name="bdaymonth">
+            <input type="submit" value="Submit">
+
+            <h1>Input Type Number</h1>
+            <label for="quantity">Quantity (between 1 and 5):</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="5">
+            <input type="submit" value="Submit">
+
+            <h1>Input Type Range</h1>
+            <label for="vol">Volume (between 0 and 50):</label>
+            <input type="range" id="vol" name="vol" min="0" max="50">
+            <input type="submit" value="Submit">
+
+            <h1>Input Type Search</h1>
+            <label for="gsearch">Search Google:</label>
+            <input type="search" id="gsearch" name="gsearch">
+            <input type="submit" value="Submit">
+
+            <h1>Input Type Tel</h1>
+            <label for="phone">Enter a Tele-phone number:</label><br><br>
+            <input type="tel" id="phone" name="phone" placeholder="Format:123-45-678" 
+            pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+            <input type="submit" value="Submit">
+
+            <h1>Input Type Time</h1>
+            <label for="appt">Select a time:</label>
+            <input type="time" id="appt" name="appt">
+            <input type="submit" value="Submit">
+
+            <h1>Input Type Url</h1>
+            <label for="homepage">Add your homepage:</label>
+            <input type="url" id="homepage" name="homepage">
+            <input type="submit" value="Submit">
+
+            <h1>Input Type Week</h1>
+            <label for="week">Select a week:</label>
+            <input type="week" id="week" name="week">
+            <input type="submit" value="Submit">
+            <h1>Select Tag</h1>
+            <label for="cars">Choose a car:</label>
+            <select id="cars" name="cars" size="2" multiple>
+              <option name="car1" value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="fiat" selected>Fiat</option>
+              <option value="audi">Audi</option>
+            </select><br><br>
+            
+            <label for="course">Web Development Courses:</label><br>
+            <select id="course" name="cars">
+                <option>HTML5</option>
+                <option>CSS3</option>
+                <option>JavaScript</option>
+                <option>ReactJs</option>
+                <option>Python</option>
+                <option>Django</option>
+            </select><br><br>
+            <input type="submit"><br><br>
+    
+            <h1>Text Area Element</h1>
+            <textarea rows="10" cols="30" value="Enter Address1" placeholder="Enter Address2">Enter Address3</textarea>
+            <textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
+            <br><br>
+            <textarea name="message" style="width:200px; height:600px;">The cat was playing in the garden.</textarea>
+            <br>
+            
+            <h1>The Button Element</h1>
+            <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+            <br><br>
+    
+            <h1>The Fieldset and Legend Elements</h1>
+    
+            <fieldset>
+                <legend>Enter Your Details</legend>
+    
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" name="fname" value="John" placeholder="First Name"><br><br>
+    
+                <label for="lname">Last Name:</label><br>
+                <input type="text" id="lname" name="lname" placeholder="Last Name"><br><br>
+    
+                <label for="age">Age:</label><br>
+                <input type="number" id="age" name="age" placeholder="Enter Your Age"><br><br>
+    
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter Email"><br><br>
+    
+                <label for="psw">Password:</label><br>
+                <input type="password" id="psw" name="psw" placeholder="Enter password"><br><br>
+    
+                <a href="8table.html" target="_blank">
+                    <input type="submit" name="submit" value="Submit">
+                </a>
+            </fieldset>
+    
+            <h1>The Datalist Element</h1>
+    
+            <input list="browsers" name="browser">
+            <datalist id="browsers">
+                <option value="Edge">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+            <input type="submit">
+            <br><br>
+    
+            <h1>Option Group Tag</h1>
+            <label for="cars">Choose a car:</label>
+            <select name="cars" id="cars">
+                <optgroup label="Swedish Cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                </optgroup>
+                <optgroup label="German Cars">
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </optgroup>
+            </select>
+            <br><br>
+            <input type="submit" value="Submit"><br><br><br><br>
+        </form>
+    </body>
+</html>
+    
